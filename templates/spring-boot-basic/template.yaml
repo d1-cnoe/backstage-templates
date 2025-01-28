@@ -47,11 +47,11 @@ spec:
         groupId:
           title: Maven Group ID
           type: string
-          default: pl.piomin.services
+          default: com.capgemini.services
         javaPackage:
           title: Java package directory
           type: string
-          default: pl/piomin/services
+          default: com/capgemini/services
         apiPath:
           title: REST API path
           type: string
