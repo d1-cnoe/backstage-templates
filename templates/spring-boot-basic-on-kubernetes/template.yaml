@@ -122,6 +122,11 @@ spec:
       input:
         message: 'test message'
         listWorkspace: true
+    - id: test
+      name: print out
+      action: debug:wait
+      input:
+        seconds: 10
 
     # - id: circleci
     #   name: Follow new project on CircleCI
