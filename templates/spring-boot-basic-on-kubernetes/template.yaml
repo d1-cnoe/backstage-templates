@@ -117,12 +117,12 @@ spec:
         repoVisibility: public
 
     - id: test
-      name: print out
+      name: print out info
       action: debug:log
       input:
         message: 'test message'
         listWorkspace: true
-    - id: test
+    - id: waitingready
       name: wait for readiness
       action: debug:wait
       input:
