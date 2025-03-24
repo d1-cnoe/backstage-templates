@@ -9,6 +9,10 @@ spec:
   selector:
     matchLabels:
       app: ${{ values.appName }}
+  strategy:
+  rollingUpdate:
+    maxSurge: 1
+    maxUnavailable: 33%
   template:
     metadata:
       annotations:
