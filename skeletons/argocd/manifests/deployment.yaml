@@ -6,6 +6,7 @@ metadata:
     app: ${{ values.appName }}
     backstage.io/kubernetes-id: ${{ values.appName }}
 spec:
+  replicas: 1
   selector:
     matchLabels:
       app: ${{ values.appName }}
