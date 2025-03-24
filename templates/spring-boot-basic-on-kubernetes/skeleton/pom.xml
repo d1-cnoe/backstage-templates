@@ -12,12 +12,12 @@
         <version>3.3.0</version>
     </parent>
 
-    <properties>
+    <!--<properties>
         <sonar.projectKey>${{ values.orgName }}_${{ values.appName }}</sonar.projectKey>
         <sonar.organization>${{ values.orgName }}</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
         <java.version>21</java.version>
-    </properties>
+    </properties>-->
 
     <dependencies>
         <dependency>
@@ -63,7 +63,7 @@
                         </goals>
                         <configuration>
                             <additionalProperties>
-                                <java.target>${java.version}</java.target>
+                                <!--<java.target>${java.version}</java.target>-->
                                 <time>${maven.build.timestamp}</time>
                             </additionalProperties>
                         </configuration>
@@ -111,11 +111,11 @@
                         <groupId>com.google.cloud.tools</groupId>
                         <artifactId>jib-maven-plugin</artifactId>
                         <version>3.4.3</version>
-                        <configuration>
+                        <!--<configuration>
                             <from>
                                 <image>eclipse-temurin:21-jdk-ubi9-minimal</image>
                             </from>
-                        </configuration>
+                        </configuration>-->
                     </plugin>
                 </plugins>
             </build>
