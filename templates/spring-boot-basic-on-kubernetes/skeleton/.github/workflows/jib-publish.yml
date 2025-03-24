@@ -1,6 +1,6 @@
 name: JIB container publish
 
-on: workflow_dispatch
+on: [push, workflow_dispatch]
 
 jobs:
   publish:
